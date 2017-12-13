@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <head>
 	<title>Rock, Paper, Scissors</title>
-	<link rel= "stylesheet" type = "text/css" src = "css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
 	<script src="http://momentjs.com/downloads/moment.js"></script>
 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 	<script src = "javascript/javascript.js"></script>
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="jumbotron">Rock, Paper, Scissors!
 		</div>
-		<div class="row">
+		<div class="row" id = "input" style="display: block">
+			<input id="nameInput" placeholder="Type name here"></input>
+			<button type="button" id="startButton">Start</button>
 		</div>
-		<div class ="row">
+		<div class ="row">It's your turn
 		</div>
+		<div class="row" style = "margin: 15px">
+			<div class="col-lg-4" id="player1">Player1
+				<div id="rock"></div>
+				<div id="paper"></div>
+				<div id="scissors"></div>
+				<div id="wins"></div>
+				<div id="losses"></div>
+			</div>
+			<div class="col-lg-4" id="winner">Winner
+			</div>
+			<div class ="col-lg-4" id="player2">Player2
+			</div>
+		</div>
+		<div id="smackTalked"></div>
+		<input id="smackTalk"></input>
 	</div>
 </body>

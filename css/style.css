@@ -1,0 +1,16 @@
+body{
+	margin: 0 auto;
+	padding: 25px;
+	text-align: center;
+}
+#smackTalk{
+	width: 600px;
+}
+
+#nameInput{
+	margin: 20px;
+}
+
+#smackTalk{
+	margin-left: 100px;
+}
