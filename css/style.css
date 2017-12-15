@@ -5,12 +5,14 @@ body{
 }
 #smackTalk{
 	width: 600px;
+	margin-left: 100px;
 }
 
 #nameInput{
 	margin: 20px;
 }
 
-#smackTalk{
-	margin-left: 100px;
+#player1{
+	border: 1 px;
+	border-color: black;
 }
